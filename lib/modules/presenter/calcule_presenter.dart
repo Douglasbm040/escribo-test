@@ -17,7 +17,7 @@ class CalculePresenter with Validation {
     String input = inputData.input();
     if (isIntegerPositive(input)) {
       int result = methodCalcule.calculate(int.parse(input));
-      inputData.output("O valor digitado foi $input e o resultado foi $result");
+      inputData.output("A soma de todos os números divisores de 3 ou 5 menor que $input é $result");
     } else {
       inputData.output("Valor inválido, digite um valor inteiro positivo ...");
     }
